@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <title>Radar de Equipos · Cadena</title>
+  <meta name="description" content="Radar operativo de estado de equipos a nivel cadena." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <div class="eyebrow">LA COMER · RADAR OPERATIVO</div>
+          <h1>Estado de Equipos</h1>
+        </div>
+      </div>
+      <div class="status-wrap">
+        <span class="status-dot"></span>
+        <span>Fuente en línea</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="badge">Cadena · Monitoreo operativo</div>
+          <h2>Una vista simple del estado actual de los equipos.</h2>
+          <p>
+            El tablero se alimenta desde tu archivo de Excel en OneDrive/SharePoint.
+            La captura continúa en Forms y Power Automate; esta web sólo presenta el
+            resultado en una interfaz más limpia.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-card">
+            <span class="meta-label">Vista principal</span>
+            <strong>Reporte</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Actualización</span>
+            <strong>Al recargar</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <span class="section-kicker">TABLERO EN VIVO</span>
+            <h3>Radar de Estado de Equipos</h3>
+          </div>
+          <div class="panel-actions">
+            <button class="ghost-btn" id="refreshBtn" type="button">Actualizar vista</button>
+            <a class="primary-btn" href="https://lacomer413-my.sharepoint.com/:x:/g/personal/manuelalvarez_lacomer413_onmicrosoft_com/IQBEkYF2vcneQ7Q8Ofum5R6DAdD9379cuC9-2FtNLEjXSGQ?e=u16GmE" target="_blank" rel="noopener noreferrer">Abrir en Excel</a>
+          </div>
+        </div>
+
+        <div class="frame-wrap" id="frameWrap">
+          <iframe
+            id="excelFrame"
+            title="Reporte Radar de Equipos"
+            src="https://lacomer413-my.sharepoint.com/:x:/g/personal/manuelalvarez_lacomer413_onmicrosoft_com/IQBEkYF2vcneQ7Q8Ofum5R6DAdD9379cuC9-2FtNLEjXSGQ?e=u16GmE&action=embedview&wdAllowInteractivity=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=False&wdActiveSheet=Reporte"
+            loading="lazy"
+            allow="clipboard-read; clipboard-write"
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+          <div class="frame-note" id="frameNote">
+            Si Microsoft solicita inicio de sesión, utiliza tu cuenta de Microsoft 365.
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card">
+          <span class="info-icon">01</span>
+          <h4>Captura</h4>
+          <p>Las tiendas responden Microsoft Forms sin entrar al tablero.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">02</span>
+          <h4>Consolidación</h4>
+          <p>Power Automate y Power Query mantienen la base analítica.</p>
+        </article>
+        <article class="info-card">
+          <span class="info-icon">03</span>
+          <h4>Consulta</h4>
+          <p>Este sitio funciona como portada web del reporte operativo.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Radar de Equipos · Cadena</span>
+      <span class="footer-muted">Diseño inspirado en una estética editorial minimalista.</span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
