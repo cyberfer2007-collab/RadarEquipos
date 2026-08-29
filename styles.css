@@ -38,6 +38,17 @@ button,a{font:inherit}
 .eyebrow,.section-kicker,.meta-label{
   font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700
 }
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 14px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
 h1{font-size:18px;margin:3px 0 0;font-weight:650;letter-spacing:-.02em}
 .status-wrap{
   display:flex;align-items:center;gap:8px;
